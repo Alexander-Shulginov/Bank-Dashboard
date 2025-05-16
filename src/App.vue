@@ -5,11 +5,11 @@ import TheSidebar from './layouts/TheSidebar.vue'
 </script>
 
 <template>
-    <div class="grid h-full grid-cols-1 lg:grid-cols-[260px_1fr] relative">
+    <div class="relative grid h-full grid-cols-1 lg:grid-cols-[260px_1fr]">
         <TheSidebar />
         <div>
             <TheHeader />
-            <main class="bg-light h-full">
+            <main class="bg-light h-full px-6 py-5 lg:px-10 lg:py-6">
                 <router-view v-slot="{ Component, route }">
                     <transition name="fade">
                         <component :is="Component" :key="route.path" />

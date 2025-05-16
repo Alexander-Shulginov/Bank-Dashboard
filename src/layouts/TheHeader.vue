@@ -7,7 +7,7 @@ import TheHeaderTitle from './TheHeaderTitle.vue'
 </script>
 
 <template>
-    <header class="border-b-border relative flex items-center justify-between border-b-2 bg-white p-3 text-center text-base lg:p-6 lg:text-left">
+    <header class="border-b-border relative flex items-center justify-between border-b-2 bg-white px-6 py-4 text-center text-base lg:px-10 lg:py-5 lg:text-left">
         <div class="flex w-full items-center justify-center gap-4 sm:justify-start">
             <TheHeaderBurger class="block lg:hidden" />
             <TheHeaderTitle class="mx-auto sm:mx-0" />

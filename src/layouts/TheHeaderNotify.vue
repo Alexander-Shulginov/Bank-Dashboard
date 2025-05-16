@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SvgIcon from '@/components/SvgIcon.vue'
+import SvgIcon from '@/components/base/SvgIcon.vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 const notifyIsVisible = ref(false)
@@ -33,8 +33,7 @@ onBeforeUnmount(() => {
         </button>
 
         <Transition>
-            <div v-show="notifyIsVisible" class="border-border rounded-base absolute top-13 right-0 grid h-[180px] w-[300px] place-items-center border-1 bg-white p-2 max-[380px]:left-[50%] max-[380px]:translate-x-[-50%]
-            max-[380px]:top-17">
+            <div v-show="notifyIsVisible" class="border-border rounded-base absolute top-13 right-0 grid h-[180px] w-[300px] place-items-center border-1 bg-white p-2 max-[380px]:top-17 max-[380px]:left-[50%] max-[380px]:translate-x-[-50%]">
                 <span>You have no notifications</span>
             </div>
         </Transition>

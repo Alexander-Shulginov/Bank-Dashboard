@@ -13,6 +13,10 @@ body {
     --color-sidebar: #b1b1b1;
     --color-base: #343c6a;
     --color-border: #e6eff5;
+    --color-dark: #232323;
+    --color-board: #718ebf;
+    --color-success: #41d4a8;
+    --color-error: #ff4b4a;
 
     --radius-base: 15px;
 }
@@ -32,4 +36,20 @@ body {
 .v-leave-to {
     opacity: 0;
     transform: translateY(10px);
+}
+
+.radius-base {
+    border-radius: 25px;
+}
+
+@media (max-width: 1024px) {
+    .radius-base {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .radius-base {
+        border-radius: 15px;
+    }
 }
