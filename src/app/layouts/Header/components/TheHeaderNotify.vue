@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SvgIcon from '@/components/base/SvgIcon.vue'
+import SvgIcon from '@/shared/components/SvgIcon.vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 const notifyIsVisible = ref(false)

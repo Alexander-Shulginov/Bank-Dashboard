@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import BaseTitle from '@/components/base/BaseTitle.vue'
-import SvgIcon from '../base/SvgIcon.vue'
+import BaseTitle from '@/shared/components/BaseTitle.vue'
+import SvgIcon from '@/shared/components/SvgIcon.vue'
 
 const transactionData = [
     {

@@ -19,13 +19,16 @@ export default defineConfig({
         vueDevTools(),
         tailwindcss(),
         createSvgIconsPlugin({
-            iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+            iconDirs: [path.resolve(process.cwd(), 'src/app/assets/icons')],
             symbolId: 'icon-[dir]-[name]',
         }),
     ],
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
+            '@app': fileURLToPath(new URL('./src/app', import.meta.url)),
+            '@shared': fileURLToPath(new URL('./src/shared', import.meta.url)),
+            '@modules': fileURLToPath(new URL('./src/modules', import.meta.url)),
         },
     },
 })

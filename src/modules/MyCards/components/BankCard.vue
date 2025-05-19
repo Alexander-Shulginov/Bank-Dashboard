@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SvgIcon from '@/components/base/SvgIcon.vue'
-import { formatCardNumber } from '@/helpers/formatCardNumber'
+import SvgIcon from '@/shared/components/SvgIcon.vue'
+import { formatCardNumber } from '@/shared/helpers/formatCardNumber'
 
 interface Card {
     id?: number

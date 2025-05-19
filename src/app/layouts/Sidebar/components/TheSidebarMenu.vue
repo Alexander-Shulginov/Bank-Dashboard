@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SvgIcon from '@/components/base/SvgIcon.vue'
-import { useSidebar } from '@/store/store'
+import SvgIcon from '@/shared/components/SvgIcon.vue'
+import { useSidebar } from '@/app/layouts/Sidebar/store/store'
 
 const { isOpen } = useSidebar()
 

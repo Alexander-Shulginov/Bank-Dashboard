@@ -1,4 +1,4 @@
-import './assets/styles/main.css'
+import '@/shared/styles/main.css'
 
 import 'virtual:svg-icons-register'
 

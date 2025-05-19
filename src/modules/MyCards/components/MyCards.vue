@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import BaseTitle from '@/components/base/BaseTitle.vue'
-import BankCard from '@/components/MyCards/BankCard.vue'
+import BaseTitle from '@/shared/components/BaseTitle.vue'
+import BankCard from './BankCard.vue'
 </script>
 
 <template>

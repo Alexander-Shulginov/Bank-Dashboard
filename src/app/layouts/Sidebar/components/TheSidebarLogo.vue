@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseLogo from '@/components/base/BaseLogo.vue'
+import BaseLogo from '@/shared/components/BaseLogo.vue'
 </script>
 
 <template>

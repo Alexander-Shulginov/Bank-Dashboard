@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import MyCards from '@/components/MyCards/MyCards.vue'
-import RecentTransaction from '@/components/RecentTransaction/RecentTransaction.vue'
+import { MyCards } from '@/modules/MyCards'
+import { RecentTransaction } from '@/modules/RecentTransaction'
 </script>
 
 <template>

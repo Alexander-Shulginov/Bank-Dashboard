@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SvgIcon from '@/components/base/SvgIcon.vue'
+import SvgIcon from '@/shared/components/SvgIcon.vue'
 </script>
 
 <template>

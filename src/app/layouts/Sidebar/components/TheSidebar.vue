@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TheSidebarLogo from '@/layouts/TheSidebarLogo.vue'
-import TheSidebarMenu from '@/layouts/TheSidebarMenu.vue'
-import { useSidebar } from '@/store/store'
+import TheSidebarLogo from '@/app/layouts/Sidebar/components/TheSidebarLogo.vue'
+import TheSidebarMenu from '@/app/layouts/Sidebar/components/TheSidebarMenu.vue'
+import { useSidebar } from '@/app/layouts/Sidebar/store/store'
 
 const { isOpen } = useSidebar()
 </script>

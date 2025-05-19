@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
+import HomeView from '@/app/views/HomeView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,42 +12,42 @@ const router = createRouter({
         {
             path: '/transaction',
             name: 'Transaction',
-            component: () => import('@/views/TransactionView.vue'),
+            component: () => import('@/app/views/TransactionView.vue'),
         },
         {
             path: '/accounts',
             name: 'Accounts',
-            component: () => import('@/views/AccountsView.vue'),
+            component: () => import('@/app/views/AccountsView.vue'),
         },
         {
             path: '/investments',
             name: 'Investments',
-            component: () => import('@/views/InvestmentsView.vue'),
+            component: () => import('@/app/views/InvestmentsView.vue'),
         },
         {
             path: '/credit-cards',
             name: 'Credit cards',
-            component: () => import('@/views/CreditCardsView.vue'),
+            component: () => import('@/app/views/CreditCardsView.vue'),
         },
         {
             path: '/loans',
             name: 'Loans',
-            component: () => import('@/views/LoansView.vue'),
+            component: () => import('@/app/views/LoansView.vue'),
         },
         {
             path: '/services',
             name: 'Services',
-            component: () => import('@/views/ServicesView.vue'),
+            component: () => import('@/app/views/ServicesView.vue'),
         },
         {
             path: '/my-privileges',
             name: 'My privileges',
-            component: () => import('@/views/MyPrivilegesView.vue'),
+            component: () => import('@/app/views/MyPrivilegesView.vue'),
         },
         {
             path: '/settings',
             name: 'Settings',
-            component: () => import('@/views/SettingView.vue'),
+            component: () => import('@/app/views/SettingView.vue'),
         },
     ],
 })
