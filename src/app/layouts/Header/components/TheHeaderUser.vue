@@ -4,6 +4,6 @@ import SvgIcon from '@/shared/components/SvgIcon.vue'
 
 <template>
     <RouterLink to="settings">
-        <SvgIcon name="user" width="54" height="54" class="size-[36px] lg:size-[42px]" />
+        <SvgIcon name="app-layouts-Header-assets-icons-user" width="54" height="54" class="size-[36px] lg:size-[42px]" />
     </RouterLink>
 </template>

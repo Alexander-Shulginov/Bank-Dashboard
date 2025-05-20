@@ -10,50 +10,52 @@ const closeSideBar = () => {
     }
 }
 
+const iconsPath = 'app-layouts-Sidebar-assets-icons-'
+
 const menuItems = [
     {
         name: 'Home',
-        icon: 'sidebar-home',
+        icon: iconsPath + 'home',
         route: '/',
     },
     {
         name: 'Transaction',
-        icon: 'sidebar-transaction',
+        icon: iconsPath + 'transaction',
         route: 'transaction',
     },
     {
         name: 'Accounts',
-        icon: 'sidebar-account',
+        icon: iconsPath + 'account',
         route: 'accounts',
     },
     {
         name: 'Investments',
-        icon: 'sidebar-invest',
+        icon: iconsPath + 'invest',
         route: 'investments',
     },
     {
         name: 'Credit Cards',
-        icon: 'sidebar-credit',
+        icon: iconsPath + 'credit',
         route: 'credit-cards',
     },
     {
         name: 'Loans',
-        icon: 'sidebar-loans',
+        icon: iconsPath + 'loans',
         route: 'loans',
     },
     {
         name: 'Services',
-        icon: 'sidebar-services',
+        icon: iconsPath + 'services',
         route: 'services',
     },
     {
         name: 'My Privileges',
-        icon: 'sidebar-privileges',
+        icon: iconsPath + 'privileges',
         route: 'my-privileges',
     },
     {
         name: 'Settings',
-        icon: 'sidebar-settings',
+        icon: iconsPath + 'settings',
         route: 'settings',
     },
 ]

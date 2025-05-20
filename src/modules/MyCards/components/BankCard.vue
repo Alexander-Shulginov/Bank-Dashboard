@@ -20,7 +20,7 @@ const { balance = 12.566, holder = 'Eddy Cusuma', expire = '12/21', id = 4241556
                 <div class="text-[12px]">Balance</div>
                 <div class="text-md font-semibold lg:text-xl">{{ currency }}{{ balance }}</div>
             </div>
-            <SvgIcon name="card-chip" class="size-[30px] lg:size-[34px]" />
+            <!-- <SvgIcon name="card-chip" class="size-[30px] lg:size-[34px]" /> -->
         </div>
 
         <div class="mb-10 flex gap-15 text-white">
@@ -35,7 +35,7 @@ const { balance = 12.566, holder = 'Eddy Cusuma', expire = '12/21', id = 4241556
         </div>
         <div class="flex items-center justify-between">
             <div class="text-md font-semibold text-white lg:text-[22px]">{{ formatCardNumber(id) }}</div>
-            <SvgIcon name="card-visa" class="h-[18px] w-[28px] lg:h-[30px] lg:w-[44px]" />
+            <SvgIcon name="modules-MyCards-assets-icons-visa" class="h-[18px] w-[28px] lg:h-[30px] lg:w-[44px]" />
         </div>
     </div>
 </template>

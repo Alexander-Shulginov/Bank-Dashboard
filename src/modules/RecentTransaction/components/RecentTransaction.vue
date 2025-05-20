@@ -8,21 +8,21 @@ const transactionData = [
         date: '28 January 2025',
         type: 'incoming',
         sum: 5800,
-        icon: 'transaction-card',
+        icon: 'modules-RecentTransaction-assets-icons-card',
     },
     {
         operation: 'Deposit Paypal',
         date: '25 January 2025',
         type: 'outgoing',
         sum: 800,
-        icon: 'transaction-paypal',
+        icon: 'modules-RecentTransaction-assets-icons-paypal',
     },
     {
         operation: 'Deposit Paypal',
         date: '21 January 2025',
         type: 'incoming',
         sum: 1200,
-        icon: 'transaction-buy',
+        icon: 'modules-RecentTransaction-assets-icons-buy',
     },
 ]
 

@@ -19,7 +19,7 @@ export default defineConfig({
         vueDevTools(),
         tailwindcss(),
         createSvgIconsPlugin({
-            iconDirs: [path.resolve(process.cwd(), 'src/app/assets/icons')],
+            iconDirs: [path.resolve(process.cwd(), 'src/')],
             symbolId: 'icon-[dir]-[name]',
         }),
     ],
