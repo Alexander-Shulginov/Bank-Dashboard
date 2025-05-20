@@ -6,6 +6,6 @@ import { RecentTransaction } from '@/modules/RecentTransaction'
 <template>
     <div class="flex gap-6">
         <MyCards />
-        <RecentTransaction />
+        <!-- <RecentTransaction /> -->
     </div>
 </template>
