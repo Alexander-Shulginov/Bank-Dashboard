@@ -38,6 +38,7 @@ onMounted(() => {
             },
             options: {
                 responsive: true,
+
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -45,8 +46,8 @@ onMounted(() => {
                         ticks: {
                             color: '#718ebf',
                             stepSize: 100,
+                            autoSkip: false,
                             padding: 10,
-
                             font: {
                                 family: 'Inter',
                                 size: 13,
@@ -64,6 +65,7 @@ onMounted(() => {
                         ticks: {
                             color: '#718ebf',
                             padding: 10,
+                            autoSkip: false,
                             font: {
                                 family: 'Inter',
                                 size: 13,
@@ -76,19 +78,17 @@ onMounted(() => {
                 },
                 plugins: {
                     legend: {
-                        position: 'top',
                         align: 'end',
+                        fullSize: false,
 
                         labels: {
                             color: '#718ebf',
                             usePointStyle: true,
-                            boxWidth: 12,
-                            boxHeight: 12,
+                            boxWidth: 15,
+                            boxHeight: 15,
                             font: {
-                                family: 'Inter',
                                 size: 15,
                             },
-                            padding: 10,
                         },
                     },
                     tooltip: {
@@ -116,14 +116,15 @@ onBeforeUnmount(() => {
     <div>
         <BaseTitle text="Weekly Activity" />
         <div class="size-full rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
-            <canvas ref="chartRef" class="sss"></canvas>
+            <canvas ref="chartRef" class="weekly-chart"></canvas>
         </div>
     </div>
 </template>
 
 <style>
-.sss {
+.weekly-chart {
     width: 100% !important;
+    max-height: 600px !important;
     height: 100% !important;
 }
 </style>
