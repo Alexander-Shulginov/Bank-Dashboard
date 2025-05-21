@@ -16,6 +16,7 @@
     "@fontsource/inter": "^5.2.5",
     "@fontsource/lato": "^5.2.5",
     "@tailwindcss/vite": "^4.1.6",
+    "chart.js": "^4.4.9",
     "tailwindcss": "^4.1.6",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
