@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BalanceHistory from '@/modules/BalanceHistory/components/BalanceHistory.vue';
 import { MyCards } from '@/modules/MyCards'
 import { RecentTransaction } from '@/modules/RecentTransaction'
 import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.vue'
@@ -6,8 +7,9 @@ import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.v
 
 <template>
     <div class="flex gap-6 mb-10">
-        <MyCards />
-        <RecentTransaction />
+        <!-- <MyCards /> -->
+        <!-- <RecentTransaction /> -->
     </div>
     <WeeklyActivity />
+    <BalanceHistory />
 </template>
