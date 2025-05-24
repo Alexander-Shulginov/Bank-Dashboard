@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import Chart from 'chart.js/auto'
+import Chart, { type ScriptableContext } from 'chart.js/auto'
+import BaseTitle from '@/shared/components/BaseTitle.vue'
 
 const BalanceChart = ref<HTMLCanvasElement | null>(null)
 let chartInstance: Chart | null = null
 
-function createGradient(context) {
+function createGradient(context: ScriptableContext<'line'>) {
     const chart = context.chart
     const { ctx, chartArea } = chart
 
@@ -79,15 +80,16 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div class="w-full">
+    <div>
+        <BaseTitle text="Balance History" />
         <canvas id="myChart" ref="BalanceChart"></canvas>
     </div>
 </template>
 
 <style scoped>
 #myChart {
-    max-height: 100% !important;
+    height: 100% !important;
+    max-height: 600px !important;
     width: 100% !important;
-    /* aspect-ratio: 16 / 9 !important; */
 }
 </style>

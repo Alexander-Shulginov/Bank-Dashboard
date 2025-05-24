@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BalanceHistory from '@/modules/BalanceHistory/components/BalanceHistory.vue';
+import ExpenseStatistics from '@/modules/ExpenseStatistics/components/ExpenseStatistics.vue';
 import { MyCards } from '@/modules/MyCards'
 import { RecentTransaction } from '@/modules/RecentTransaction'
 import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.vue'
@@ -10,6 +11,8 @@ import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.v
         <!-- <MyCards /> -->
         <!-- <RecentTransaction /> -->
     </div>
-    <WeeklyActivity />
-    <BalanceHistory />
+    <ExpenseStatistics />
+    <!-- <WeeklyActivity /> -->
+    <!-- <BalanceHistory /> -->
+
 </template>
