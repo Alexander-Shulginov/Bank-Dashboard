@@ -58,13 +58,16 @@ onMounted(() => {
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
-                    legend: { display: false },
+                    legend: {
+                        display: false,
+                    },
                     tooltip: {
                         backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                        titleColor: '#ffffff',
-                        bodyColor: '#ffffff',
-                        borderColor: '#ffffff',
-                        borderWidth: 1,
+
+                        borderColor: '#000',
+                        borderWidth: 0,
+                        boxWidth: 0,
+                        boxHeight: 0,
                         cornerRadius: 8,
                         displayColors: true,
                         callbacks: {
@@ -104,22 +107,18 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <BaseTitle text="Expense Distribution" />
-    <div class="radius-base bg-white">
-        <div>
-            <canvas id="expenseChart" ref="expenseChart"></canvas>
-        </div>
-        <div v-for="(item, index) in chartData" :key="index">
-            <div :style="{ backgroundColor: item.color }"></div>
-            <span>{{ item.label }} - {{ item.percentage }}%</span>
+    <div class="size-full">
+        <BaseTitle text="Expense Distribution" />
+        <div class="radius-base flex flex-col items-center bg-white px-15 py-5.5 sm:px-10 lg:py-7.5">
+            <div class="mb-5">
+                <canvas ref="expenseChart"></canvas>
+            </div>
+            <div class="inline-grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
+                <div class="flex items-center gap-2" v-for="(item, index) in chartData" :key="index">
+                    <div class="size-[18px] shrink-0 rounded-full" :style="{ backgroundColor: item.color }"></div>
+                    <span class="no-wrap shrink-0 text-base">{{ item.label }} - {{ item.percentage }}%</span>
+                </div>
+            </div>
         </div>
     </div>
 </template>
-
-<style scoped>
-#expenseChart {
-    height: 100% !important;
-    max-height: 600px !important;
-    width: 100% !important;
-}
-</style>

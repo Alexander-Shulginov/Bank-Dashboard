@@ -37,7 +37,7 @@ onMounted(() => {
                 ],
             },
             options: {
-                responsive: true,
+                // responsive: false,
 
                 scales: {
                     y: {
@@ -113,9 +113,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div>
+    <div class="w-full">
         <BaseTitle text="Weekly Activity" />
-        <div class="size-full rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
+        <div class="size-full flex  rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
             <canvas ref="chartRef" class="weekly-chart"></canvas>
         </div>
     </div>
@@ -124,7 +124,7 @@ onBeforeUnmount(() => {
 <style>
 .weekly-chart {
     width: 100% !important;
-    max-height: 600px !important;
-    height: 100% !important;
+    /* height: 100% !important; */
+    max-height: 100%;
 }
 </style>
