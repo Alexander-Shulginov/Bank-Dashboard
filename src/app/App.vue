@@ -21,7 +21,7 @@ import { TheSidebar } from './layouts/Sidebar'
     </div>
 </template>
 
-<!-- <style>
+<style>
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.5s ease;
@@ -31,4 +31,4 @@ import { TheSidebar } from './layouts/Sidebar'
 .fade-leave-to {
     opacity: 0;
 }
-</style> -->
+</style>
