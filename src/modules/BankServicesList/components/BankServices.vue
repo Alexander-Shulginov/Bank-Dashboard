@@ -5,7 +5,9 @@ import BankServicesFeatures from './BankServicesFeatures.vue'
 </script>
 
 <template>
-    <BankServicesFeatures />
-    <BaseTitle text="Bank Services List" />
-    <BankServicesInfo />
+    <section aria-label="Services">
+        <BankServicesFeatures />
+        <BaseTitle text="Bank Services List" />
+        <BankServicesInfo />
+    </section>
 </template>
