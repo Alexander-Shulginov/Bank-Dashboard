@@ -2,8 +2,9 @@
 import { ref } from 'vue'
 import UserSettingsEdit from './EditProfile/UserSettingsEdit.vue'
 import UserPref from './Preferences/UserPref.vue'
+import UserSecurity from './Security/UserSecurity.vue'
 
-const activeTab = ref('preferences')
+const activeTab = ref('security')
 
 const tabs = [
     { id: 'edit', label: 'Edit Profile' },
@@ -18,10 +19,7 @@ const tabs = [
             {{ tab.label }}
         </button>
     </div>
-    <Transition name="fade">
-        <UserSettingsEdit v-show="activeTab == 'edit'" />
-    </Transition>
-    <Transition name="fade">
-        <UserPref />
-    </Transition>
+    <UserSettingsEdit v-show="activeTab == 'edit'" />
+    <UserPref v-show="activeTab == 'preferences'" />
+    <UserSecurity v-show="activeTab == 'security'" />
 </template>

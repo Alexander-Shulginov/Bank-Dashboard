@@ -30,7 +30,7 @@ const clearInput = () => {
                 :type="type"
                 :placeholder="placeholder"
                 :disabled="isDisabled"
-                class="text-dark placeholder-board w-full rounded-[10px] border-1 border-[#77aace] px-4 py-3 text-sm group-[.is-error]:border-red-400 sm:rounded-[15px] sm:px-5 sm:py-4"
+                class="text-dark placeholder-board w-full rounded-[10px] border-1 border-[#77aace] px-4 py-3 text-sm group-[.is-error]:border-red-400 sm:rounded-[15px] sm:pl-5 pr-10 sm:py-4"
             />
             <transition name="fade">
                 <button v-show="inputValue" @click="clearInput" type="button" aria-label="Clear this input">
