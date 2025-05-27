@@ -1,0 +1,62 @@
+[
+    {
+        "label": "Your Name",
+        "placeholder": "Charlene Reed",
+        "type": "text",
+        "errorText": "Name is required"
+    },
+    {
+        "label": "User Name",
+        "placeholder": "Charlene Reed",
+        "type": "text",
+        "errorText": "Username must be unique"
+    },
+    {
+        "label": "Email",
+        "placeholder": "charlenereed@gmail.com",
+        "type": "email",
+        "errorText": "Enter valid email"
+    },
+    {
+        "label": "Password",
+        "placeholder": "**********",
+        "type": "password",
+        "errorText": "Min 8 characters required"
+    },
+    {
+        "label": "Date of Birth",
+        "placeholder": "25 January 1990",
+        "type": "text",
+        "errorText": "Invalid date format"
+    },
+    {
+        "label": "Present Address",
+        "placeholder": "San Jose, California, ENG",
+        "type": "text",
+        "errorText": "Address is required"
+    },
+    {
+        "label": "Permanent Address",
+        "placeholder": "San Jose, California, ENG",
+        "type": "text",
+        "errorText": "Address is required"
+    },
+    {
+        "label": "City",
+        "placeholder": "San Jose",
+        "type": "text",
+        "errorText": "City name is required"
+    },
+    {
+        "label": "Postal Code",
+        "placeholder": "45962",
+        "type": "text",
+        "errorText": "Invalid postal code"
+    },
+    {
+        "label": "Country",
+        "placeholder": "ENG",
+        "type": "text",
+        "errorText": "Country is required"
+    }
+]
