@@ -19,9 +19,9 @@ const clearInput = () => {
     inputValue.value = ''
 }
 </script>
-<!-- is-error - class for error -->
+
 <template>
-    <div>
+    <div class="w-full">
         <label :for="id" class="text-dark text-md mb-2 block">{{ label }}</label>
         <div class="relative">
             <input

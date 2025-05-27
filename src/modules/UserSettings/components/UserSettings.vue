@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import UserSettingsEdit from './EditProfile/UserSettingsEdit.vue'
+import UserPref from './Preferences/UserPref.vue'
 
-const activeTab = ref('edit')
+const activeTab = ref('preferences')
 
 const tabs = [
     { id: 'edit', label: 'Edit Profile' },
@@ -19,5 +20,8 @@ const tabs = [
     </div>
     <Transition name="fade">
         <UserSettingsEdit v-show="activeTab == 'edit'" />
+    </Transition>
+    <Transition name="fade">
+        <UserPref />
     </Transition>
 </template>
