@@ -4,7 +4,6 @@ import ExpenseStatistics from '@/modules/ExpenseStatistics/components/ExpenseSta
 import { MyCards } from '@/modules/MyCards'
 import { RecentTransaction } from '@/modules/RecentTransaction'
 import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.vue'
-import UserSettings from '@/modules/UserSettings/components/UserSettings.vue'
 </script>
 
 <template>
@@ -17,5 +16,4 @@ import UserSettings from '@/modules/UserSettings/components/UserSettings.vue'
         <!-- <ExpenseStatistics /> -->
     </div>
     <!-- <BalanceHistory /> -->
-    <UserSettings />
 </template>
