@@ -40,11 +40,6 @@ const router = createRouter({
             component: () => import('@/app/views/ServicesView.vue'),
         },
         {
-            path: '/my-privileges',
-            name: 'My privileges',
-            component: () => import('@/app/views/MyPrivilegesView.vue'),
-        },
-        {
             path: '/settings',
             name: 'Settings',
             component: () => import('@/app/views/SettingView.vue'),
