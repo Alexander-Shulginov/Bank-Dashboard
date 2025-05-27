@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Business loans",
+        "descr": "Flexible financing solutions to help your business grow and thrive in today's competitive market",
+        "icon": "loans"
+    },
+    {
+        "id": 2,
+        "title": "Checking accounts",
+        "descr": "Manage your daily finances with ease using our feature-rich checking account options",
+        "icon": "account"
+    },
+    {
+        "id": 3,
+        "title": "Savings accounts",
+        "descr": "Build your financial future with high-yield savings accounts designed for growth",
+        "icon": "up"
+    },
+    {
+        "id": 4,
+        "title": "Debit and credit cards",
+        "descr": "Convenient payment solutions with advanced security features for all your transactions",
+        "icon": "user"
+    },
+    {
+        "id": 5,
+        "title": "Life Insurance",
+        "descr": "Protect your family's financial future with comprehensive life insurance coverage options",
+        "icon": "safe"
+    }
+]

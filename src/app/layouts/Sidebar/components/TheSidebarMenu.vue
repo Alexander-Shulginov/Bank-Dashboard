@@ -49,11 +49,6 @@ const menuItems = [
         route: 'services',
     },
     {
-        name: 'My Privileges',
-        icon: iconsPath + 'privileges',
-        route: 'my-privileges',
-    },
-    {
         name: 'Settings',
         icon: iconsPath + 'settings',
         route: 'settings',
