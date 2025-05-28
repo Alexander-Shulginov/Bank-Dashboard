@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import BalanceHistory from '@/modules/BalanceHistory/components/BalanceHistory.vue'
 import ExpenseStatistics from '@/modules/ExpenseStatistics/components/ExpenseStatistics.vue'
-import LoansOverview from '@/modules/LoansOverview/components/LoansOverview.vue'
 import { MyCards } from '@/modules/MyCards'
 import { RecentTransaction } from '@/modules/RecentTransaction'
 import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.vue'
 </script>
 
 <template>
-    <LoansOverview />
 
     <!-- <div class="mb-10 flex gap-6"> -->
         <!-- <MyCards /> -->

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/app/views/HomeView.vue'
+import { nextTick } from 'vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +46,14 @@ const router = createRouter({
             component: () => import('@/app/views/SettingView.vue'),
         },
     ],
+})
+
+const defaultTitle = 'BankBoard'
+
+router.afterEach((to) => {
+    nextTick(() => {
+        document.title = `${defaultTitle} | ${String(to.name)}`
+    })
 })
 
 export default router
