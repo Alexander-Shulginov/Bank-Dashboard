@@ -9,8 +9,7 @@ import { TheSidebar } from './layouts/Sidebar'
         <TheSidebar />
         <div>
             <TheHeader />
-            <main class="bg-light min-h-[100vh] px-2 sm:px-6 py-5 lg:px-10 lg:py-6">
-
+            <main class="bg-light min-h-[100vh] px-2 py-5 sm:px-6 lg:px-10 lg:py-6">
                 <router-view v-slot="{ Component, route }">
                     <transition name="fade">
                         <component :is="Component" :key="route.path" />
@@ -20,15 +19,3 @@ import { TheSidebar } from './layouts/Sidebar'
         </div>
     </div>
 </template>
-
-<style>
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
-}
-</style>

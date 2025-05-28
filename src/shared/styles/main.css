@@ -25,21 +25,21 @@ body {
     outline-color: var(--color-accent);
 }
 
-.v-enter-active,
-.v-leave-active {
-    transition:
-        opacity 0.4s ease,
-        transform 0.4s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 0;
-    transform: translateY(10px);
-}
-
 .radius-base {
     border-radius: 25px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(10px);
 }
 
 @media (max-width: 1024px) {
