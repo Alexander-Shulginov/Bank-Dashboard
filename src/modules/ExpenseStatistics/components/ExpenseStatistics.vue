@@ -8,7 +8,7 @@ let chartInstance: Chart | null = null
 
 const chartData = [
     {
-        label: 'Entertainment',
+        label: 'Shopping',
         value: 30,
         percentage: 30,
         color: '#4a5568',
@@ -109,9 +109,9 @@ onBeforeUnmount(() => {
 <template>
     <div class="size-full">
         <BaseTitle text="Expense Distribution" />
-        <div class="radius-base flex flex-col items-center bg-white px-15 py-5.5 sm:px-10 lg:py-7.5">
+        <div class="radius-base h-full flex flex-col items-center bg-white px-15 py-5.5 sm:px-10 lg:py-7.5">
             <div class="mb-5">
-                <canvas ref="expenseChart"></canvas>
+                <canvas ref="expenseChart" class="weekly-chart"></canvas>
             </div>
             <div class="inline-grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
                 <div class="flex items-center gap-2" v-for="(item, index) in chartData" :key="index">
@@ -122,3 +122,10 @@ onBeforeUnmount(() => {
         </div>
     </div>
 </template>
+<style>
+.weekly-chart {
+    width: 100% !important;
+    height: 100% !important;
+    /* max-height: 300px; */
+}
+</style>

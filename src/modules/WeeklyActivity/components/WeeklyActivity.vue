@@ -115,7 +115,7 @@ onBeforeUnmount(() => {
 <template>
     <div class="w-full">
         <BaseTitle text="Weekly Activity" />
-        <div class="size-full flex  rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
+        <div class="flex size-full rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
             <canvas ref="chartRef" class="weekly-chart"></canvas>
         </div>
     </div>
@@ -124,7 +124,7 @@ onBeforeUnmount(() => {
 <style>
 .weekly-chart {
     width: 100% !important;
-    /* height: 100% !important; */
-    max-height: 100%;
+    height: 100% !important;
+    /* max-height: 400px; */
 }
 </style>

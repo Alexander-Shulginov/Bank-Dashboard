@@ -7,14 +7,13 @@ import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.v
 </script>
 
 <template>
-
-    <!-- <div class="mb-10 flex gap-6"> -->
-        <!-- <MyCards /> -->
-        <!-- <RecentTransaction /> -->
-    <!-- </div> -->
+    <div class="mb-10 flex gap-6 flex-col xl:flex-row">
+        <MyCards />
+        <RecentTransaction />
+    </div>
     <!-- <div class="mb-20 grid grid-cols-[2fr_1fr] gap-6"> -->
         <!-- <WeeklyActivity /> -->
         <!-- <ExpenseStatistics /> -->
     <!-- </div> -->
-    <!-- <BalanceHistory /> -->
+    <BalanceHistory />
 </template>

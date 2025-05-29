@@ -17,7 +17,7 @@ const calcReplayMoney = computed(() => {
 <template>
     <div class="radius-base scrollable overflow-x-scroll bg-white p-6 lg:overflow-hidden">
         <table v-if="loans" class="w-[700px] overflow-x-scroll text-left md:w-[900px] lg:w-full">
-            <thead class="border-board border-b-1">
+            <thead class="border-transparent border-b-14">
                 <tr class="text-board text-[12px] font-medium md:text-[16px]">
                     <th>SL No</th>
                     <th>Loan Money</th>
