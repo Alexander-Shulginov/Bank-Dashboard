@@ -8,7 +8,7 @@ const { isOpen } = useSidebar()
 
 <template>
     <aside
-        class="bg-light border-r-border absolute top-15 h-full overflow-hidden border-r-2 pr-4 transition-all duration-500 lg:static lg:pr-0"
+        class="bg-light border-r-border fixed top-15 z-10 h-full overflow-hidden border-r-2 pr-6 transition-all duration-500 lg:top-0 lg:pr-0"
         :class="{
             'visible left-0': isOpen,
             'invisible left-[-100%]': !isOpen,
