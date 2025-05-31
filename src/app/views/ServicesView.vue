@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import BankServicesFeatures from '@/modules/BankServicesFeatures/components/BankServicesFeatures.vue'
-import { BankServicesList } from '@/modules/BankServicesList'
+import { BankServicesFeatures } from '@/modules/BankServicesFeatures/index'
+import { BankServicesList } from '@/modules/BankServicesList/index'
 </script>
 
 <template>

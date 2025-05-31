@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import LoansOverviewFeatures from '@/modules/LoansFeatures/components/LoansOverviewFeatures.vue'
-import LoansOverview from '@/modules/LoansOverview/components/LoansOverview.vue'
+import { LoansOverviewFeatures } from '@/modules/LoansFeatures/index'
+import { LoansOverview } from '@/modules/LoansOverview/index.ts'
 </script>
 
 <template>

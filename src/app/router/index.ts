@@ -5,11 +5,11 @@ import { nextTick } from 'vue'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        {
-            path: '/',
-            name: 'Home',
-            component: HomeView,
-        },
+        // {
+        //     path: '/',
+        //     name: 'Home',
+        //     component: HomeView,
+        // },
         {
             path: '/transaction',
             name: 'Transaction',
@@ -21,7 +21,7 @@ const router = createRouter({
             component: () => import('@/app/views/AccountsView.vue'),
         },
         {
-            path: '/investments',
+            path: '/',
             name: 'Investments',
             component: () => import('@/app/views/InvestmentsView.vue'),
         },

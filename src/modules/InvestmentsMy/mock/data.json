@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Apple Store",
+        "type": "E-commerce",
+        "sum": 54000,
+        "value": 16,
+        "icon": "apple"
+    },
+    {
+        "id": 2,
+        "title": "Google",
+        "type": "E-commerce",
+        "sum": 25300,
+        "value": 4,
+        "icon": "google"
+    },
+    {
+        "id": 3,
+        "title": "Tesla Motors",
+        "type": "E-commerce",
+        "sum": 8200,
+        "value": 25,
+        "icon": "tesla"
+    }
+]

@@ -4,7 +4,5 @@ const route = useRoute()
 </script>
 
 <template>
-    <h1 class="text-[22px] lg:text-[28px] font-semibold">{{ route.name }}</h1>
+    <h1 class="text-[22px] font-semibold lg:text-[28px]">{{ route.name }}</h1>
 </template>
-
-<style lang="scss" scoped></style>
