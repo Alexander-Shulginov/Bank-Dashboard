@@ -3,5 +3,7 @@ import { UserSettings } from '@/modules/UserSettings/index'
 </script>
 
 <template>
-    <UserSettings />
+    <section aria-label="Settings">
+        <UserSettings />
+    </section>
 </template>
