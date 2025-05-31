@@ -1,1 +1,1 @@
-export { default as BankServicesList } from '@/modules/BankServicesList/components/BankServices.vue'
+export { default as BankServicesList } from '@/modules/BankServicesList/components/BankServicesList.vue'

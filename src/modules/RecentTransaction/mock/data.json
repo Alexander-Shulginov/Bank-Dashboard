@@ -4,20 +4,20 @@
         "date": "28 January 2025",
         "type": "incoming",
         "sum": 5800,
-        "icon": "modules-RecentTransaction-assets-icons-card"
+        "icon": "modules-RecentTransaction-icons-card"
     },
     {
         "operation": "Deposit Paypal",
         "date": "25 January 2025",
         "type": "outgoing",
         "sum": 800,
-        "icon": "modules-RecentTransaction-assets-icons-paypal"
+        "icon": "modules-RecentTransaction-icons-paypal"
     },
     {
         "operation": "Deposit Paypal",
         "date": "21 January 2025",
         "type": "incoming",
         "sum": 1200,
-        "icon": "modules-RecentTransaction-assets-icons-buy"
+        "icon": "modules-RecentTransaction-icons-buy"
     }
 ]

@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { BankServicesList } from '@/modules/BankServicesList';
+import BankServicesFeatures from '@/modules/BankServicesFeatures/components/BankServicesFeatures.vue'
+import { BankServicesList } from '@/modules/BankServicesList'
 </script>
 
 <template>
-    <BankServicesList />
+    <section aria-label="Services">
+        <BankServicesFeatures />
+        <BankServicesList />
+    </section>
 </template>

@@ -23,7 +23,7 @@ const content = [
 </script>
 
 <template>
-    <div class="scrollable mb-5 flex justify-between gap-5 overflow-x-auto xl:flex-row xl:overflow-hidden">
-        <FeatureCard v-for="item in content" :key="item.id" :title="item.title" :descr="item.descr" :icon="`modules-BankServicesList-icons-features-${item.icon}`" />
+    <div class="scrollable mb-5 flex justify-between gap-5 overflow-x-auto md:mb-10 xl:flex-row xl:overflow-hidden">
+        <FeatureCard v-for="item in content" :key="item.id" :title="item.title" :descr="item.descr" :icon="`modules-BankServicesFeatures-icons-features-${item.icon}`" />
     </div>
 </template>
