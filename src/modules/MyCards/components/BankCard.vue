@@ -14,7 +14,7 @@ const { balance = 12.566, holder = 'Eddy Cusuma', expire = '12/21', id = 4241556
 </script>
 
 <template>
-    <div style="background: linear-gradient(136deg, #4c49ed 0%, #0a06f4 100%)" class="font-second grow-2 rounded-[15px] p-4 md:rounded-[20px] md:p-5 lg:rounded-[25px] lg:p-6">
+    <div style="background: linear-gradient(136deg, #4c49ed 0%, #0a06f4 100%)" class="font-second max-w-[380px] grow-2 rounded-[15px] p-4 md:rounded-[20px] md:p-5 lg:rounded-[25px] lg:p-6">
         <div class="mb-10 flex items-center justify-between">
             <div class="text-white">
                 <div class="text-[12px]">Balance</div>
