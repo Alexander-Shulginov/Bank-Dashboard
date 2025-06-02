@@ -91,16 +91,16 @@ onBeforeUnmount(() => {
         <BaseTitle text="Card Expense Statistics" />
         <div class="w-full">
             <div class="flex size-full rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
-                <canvas ref="chartRef" class="weekly-chart"></canvas>
+                <canvas ref="chartRef" class="expense-chart"></canvas>
             </div>
         </div>
     </div>
 </template>
 
 <style>
-.weekly-chart {
-    width: 100% !important;
-    height: 100% !important;
-    /* max-height: 310px; */
+@media (max-width: 1279px) {
+    .expense-chart {
+        max-height: 300px;
+    }
 }
 </style>
