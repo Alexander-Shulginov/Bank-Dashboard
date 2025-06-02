@@ -21,7 +21,7 @@ const menuItems = [
     {
         name: 'Transaction',
         icon: iconsPath + 'transaction',
-        route: 'transaction',
+        route: 'transactions',
     },
     {
         name: 'Accounts',

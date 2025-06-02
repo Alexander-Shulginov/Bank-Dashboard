@@ -14,14 +14,14 @@ const tabs = [
 </script>
 
 <template>
-    <div class="bg-white lg:rounded-[20px] rounded-[15px] p-5 md:p-7">
-        <div class="mb-2.5 flex gap-4 md:gap-10">
+    <div class="rounded-[15px] bg-white p-5 md:p-7 lg:rounded-[20px]">
+        <div class="mb-2.5 flex gap-3 md:gap-10">
             <button
                 v-for="tab in tabs"
                 :key="tab.id"
                 type="button"
                 @click="activeTab = tab.id"
-                :class="['mb-5 shrink-0 cursor-pointer pb-1 font-medium transition-colors md:mb-12', activeTab === tab.id ? 'border-accent text-accent border-b-3' : 'text-board']"
+                :class="['mb-5 shrink-0 cursor-pointer border-b-3 px-1 py-4  font-medium', activeTab === tab.id ? 'border-accent text-accent' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700']"
             >
                 {{ tab.label }}
             </button>

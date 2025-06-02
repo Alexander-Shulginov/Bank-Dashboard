@@ -11,8 +11,8 @@ const router = createRouter({
             component: HomeView,
         },
         {
-            path: '/transaction',
-            name: 'Transaction',
+            path: '/transactions',
+            name: 'Transactions',
             component: () => import('@/app/views/TransactionView.vue'),
         },
         {
