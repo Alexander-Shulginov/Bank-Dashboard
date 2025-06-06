@@ -3,5 +3,7 @@ import { TransactionRecent } from '@/modules/TransactionsRecent'
 </script>
 
 <template>
-    <TransactionRecent />
+    <section aria-label="Transactions">
+        <TransactionRecent />
+    </section>
 </template>

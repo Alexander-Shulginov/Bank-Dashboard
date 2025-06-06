@@ -13,7 +13,6 @@ const tabs = [
 </script>
 
 <template>
-    <div>
         <BaseTitle text="Recent Transactions"/>
         <nav class="flex gap-x-8">
             <button
@@ -30,5 +29,4 @@ const tabs = [
             </button>
         </nav>
         <TransactionRecentTable :active-tab="activeTab" />
-    </div>
 </template>

@@ -9,11 +9,7 @@ import { TheSidebar } from './layouts/Sidebar'
         <TheSidebar />
         <TheHeader />
         <main class="bg-light min-h-[100vh] px-2 py-5 pt-[90px] sm:px-6 lg:px-10 lg:pt-[100px] lg:pb-6">
-            <router-view v-slot="{ Component, route }">
-                <transition name="fade">
-                    <component :is="Component" :key="route.path" />
-                </transition>
-            </router-view>
+            <router-view />
         </main>
     </div>
 </template>
