@@ -10,17 +10,17 @@ const chartData = {
     datasets: [
         {
             label: 'Debit',
-            data: [800, 600, 500, 1800, 900, 1000, 960], 
-            backgroundColor: '#3366FF', 
-            borderRadius: 8, 
-            borderSkipped: false, 
+            data: [800, 600, 500, 1800, 900, 1000, 960],
+            backgroundColor: '#3366FF',
+            borderRadius: 8,
+            borderSkipped: false,
         },
         {
             label: 'Credit',
-            data: [1200, 850, 700, 650, 1100, 450, 1420], 
-            backgroundColor: '#FF9500', 
-            borderRadius: 8, 
-            borderSkipped: false, 
+            data: [1200, 850, 700, 650, 1100, 450, 1420],
+            backgroundColor: '#FF9500',
+            borderRadius: 8,
+            borderSkipped: false,
         },
     ],
 }
@@ -31,29 +31,28 @@ onMounted(() => {
         if (!ctx) return
 
         chartInstance = new Chart(ctx, {
-            type: 'bar', 
+            type: 'bar',
             data: chartData,
             options: {
-                responsive: true, 
-                maintainAspectRatio: false, 
+                responsive: true,
+                maintainAspectRatio: false,
 
-                
                 scales: {
                     x: {
                         grid: {
-                            display: false, 
+                            display: false,
                         },
                         ticks: {
-                            color: '#999', 
+                            color: '#999',
                             font: {
                                 size: 14,
                             },
                         },
                     },
                     y: {
-                        beginAtZero: true, 
+                        beginAtZero: true,
                         grid: {
-                            color: '#f0f0f0', 
+                            color: '#f0f0f0',
                             lineWidth: 1,
                         },
                         ticks: {
@@ -61,7 +60,7 @@ onMounted(() => {
                             font: {
                                 size: 12,
                             },
-                            
+
                             callback: function (value) {
                                 return '$' + value.toLocaleString()
                             },
@@ -69,19 +68,16 @@ onMounted(() => {
                     },
                 },
 
-                
                 plugins: {
                     legend: {
-                        display: false, 
+                        display: false,
                     },
                     tooltip: {
-                        
                         backgroundColor: 'rgba(0,0,0,0.8)',
                         titleColor: 'white',
                         bodyColor: 'white',
                         cornerRadius: 8,
                         callbacks: {
-                            
                             label: function (context) {
                                 return context.dataset.label + ': $' + context.parsed.y.toLocaleString()
                             },
@@ -89,16 +85,14 @@ onMounted(() => {
                     },
                 },
 
-                
                 animation: {
-                    duration: 1000, 
-                    easing: 'easeOutQuart', 
+                    duration: 1000,
+                    easing: 'easeOutQuart',
                 },
 
-                
                 interaction: {
-                    intersect: false, 
-                    mode: 'index', 
+                    intersect: false,
+                    mode: 'index',
                 },
             },
         })
@@ -117,15 +111,22 @@ onBeforeUnmount(() => {
     <div class="w-full">
         <BaseTitle text="Debit & Credit Overview" />
         <div class="flex rounded-[15px] bg-white p-2 md:rounded-[25px] md:p-6">
-            <canvas ref="chartRef" class="weekly-chart"></canvas>
+            <canvas ref="chartRef" class="overview-chart"></canvas>
         </div>
     </div>
 </template>
 
 <style>
-.weekly-chart {
+.overview-chart {
     width: 100% !important;
     height: 100% !important;
-    /* max-height: 400px; */
+
+    height: 290px !important;
+}
+
+@media (max-width: 768px) {
+    .overview-chart {
+        height: 100% !important;
+    }
 }
 </style>

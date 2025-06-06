@@ -3,13 +3,13 @@ import FeatureCard from '@/shared/components/FeatureCard.vue'
 const content = [
     {
         id: 1,
-        title: 'Total Invested Amount',
+        title: 'Total  Amount',
         descr: '$150,000',
         icon: 'money',
     },
     {
         id: 2,
-        title: 'Number of Investments',
+        title: 'Investments',
         descr: '1,250',
         icon: 'percents',
     },

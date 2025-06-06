@@ -29,11 +29,6 @@ const menuItems = [
         route: 'accounts',
     },
     {
-        name: 'Investments',
-        icon: iconsPath + 'invest',
-        route: 'investments',
-    },
-    {
         name: 'Credit Cards',
         icon: iconsPath + 'credit',
         route: 'credit-cards',

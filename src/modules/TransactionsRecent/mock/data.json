@@ -43,5 +43,50 @@
         "card": "1234 ****",
         "date": "14 Jan, 10.40 PM",
         "amount": 840
+    },
+    {
+        "id": "6",
+        "description": "Spotify Subscription",
+        "transactionId": "#12548796",
+        "type": "Shopping",
+        "card": "1234 ****",
+        "date": "28 Jan, 12.30 AM",
+        "amount": -2500
+    },
+    {
+        "id": "7",
+        "description": "Freepik Sales",
+        "transactionId": "#12548796",
+        "type": "Transfer",
+        "card": "1234 ****",
+        "date": "25 Jan, 10.40 PM",
+        "amount": 750
+    },
+    {
+        "id": "8",
+        "description": "Mobile Service",
+        "transactionId": "#12548796",
+        "type": "Service",
+        "card": "1234 ****",
+        "date": "20 Jan, 10.40 PM",
+        "amount": -150
+    },
+    {
+        "id": "9",
+        "description": "Internet",
+        "transactionId": "#12548796",
+        "type": "Transfer",
+        "card": "1234 ****",
+        "date": "15 Jan, 03.29 PM",
+        "amount": -1050
+    },
+    {
+        "id": "10",
+        "description": "Tom",
+        "transactionId": "#12548796",
+        "type": "Transfer",
+        "card": "1234 ****",
+        "date": "14 Jan, 10.40 PM",
+        "amount": 840
     }
 ]

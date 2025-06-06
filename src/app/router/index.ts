@@ -21,11 +21,6 @@ const router = createRouter({
             component: () => import('@/app/views/AccountsView.vue'),
         },
         {
-            path: '/investments',
-            name: 'Investments',
-            component: () => import('@/app/views/InvestmentsView.vue'),
-        },
-        {
             path: '/credit-cards',
             name: 'Credit cards',
             component: () => import('@/app/views/CreditCardsView.vue'),
@@ -46,6 +41,10 @@ const router = createRouter({
             component: () => import('@/app/views/SettingView.vue'),
         },
     ],
+
+    scrollBehavior() {
+        return { top: 0 }
+    },
 })
 
 const defaultTitle = 'BankBoard'

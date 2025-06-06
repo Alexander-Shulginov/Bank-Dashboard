@@ -40,7 +40,6 @@ const getTypeClass = (type: string): string => {
                     <th class="text-board px-6 py-3 text-left text-xs font-medium tracking-wider uppercase">Card</th>
                     <th class="text-board px-6 py-3 text-left text-xs font-medium tracking-wider uppercase">Date</th>
                     <th class="text-board px-6 py-3 text-left text-xs font-medium tracking-wider uppercase">Amount</th>
-                    <th class="text-board px-6 py-3 text-left text-xs font-medium tracking-wider uppercase">Receipt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200 bg-white">

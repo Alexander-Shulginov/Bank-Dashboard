@@ -1,19 +1,21 @@
 <script setup lang="ts">
-import BalanceHistory from '@/modules/BalanceHistory/components/BalanceHistory.vue'
-import ExpenseStatistics from '@/modules/ExpenseStatistics/components/ExpenseStatistics.vue'
-import { MyCards } from '@/modules/MyCards'
-import { RecentTransaction } from '@/modules/RecentTransaction'
-import WeeklyActivity from '@/modules/WeeklyActivity/components/WeeklyActivity.vue'
+import { InvestmentsFeatures } from '@/modules/InvestmentsFeatures/index'
+import { InvestmentsMonthly } from '@/modules/InvestmentsMonthly/index'
+import { InvestmentsTrending } from '@/modules/InvestmentsTrending'
+import { InvestmentsYears } from '@/modules/InvestmentsYears'
+import { InvestmentsMy } from '@/modules/InvestmentsMy'
 </script>
 
 <template>
-    <div class="mb-10 flex flex-col gap-6 xl:flex-row">
-        <MyCards />
-        <RecentTransaction />
-    </div>
-    <div class="mb-20 grid grid-cols-[2fr_1fr] gap-6">
-        <WeeklyActivity />
-        <ExpenseStatistics />
-    </div>
-    <BalanceHistory />
+    <section aria-label="Investments">
+        <InvestmentsFeatures />
+        <div class="mb-6 flex flex-col items-start gap-5 lg:mb-10 xl:flex-row">
+            <InvestmentsYears />
+            <InvestmentsMonthly />
+        </div>
+        <div class="grid grid-cols-1 gap-8 xl:grid-cols-[2fr_1.5fr]">
+            <InvestmentsMy />
+            <InvestmentsTrending />
+        </div>
+    </section>
 </template>
