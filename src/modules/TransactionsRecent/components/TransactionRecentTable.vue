@@ -78,7 +78,12 @@ const getTypeClass = (type: string): string => {
                         <span :class="[transaction.amount > 0 ? 'text-green-600' : 'text-red-600']"> {{ transaction.amount > 0 ? '+' : '-' }}${{ Math.abs(transaction.amount).toLocaleString() }} </span>
                     </td>
                     <td class="px-6 py-4 text-right text-sm font-medium whitespace-nowrap">
-                        <button class="cursor-pointer rounded-md bg-blue-100 px-4 py-2 text-sm font-medium text-blue-600 transition-colors hover:bg-blue-200" type="button">Download</button>
+                        <button
+                            type="button"
+                            class="hover:text-accent hover:border-accent shrink-0 cursor-pointer justify-self-end rounded-full border-[#718ebf] text-xs font-medium text-[#718ebf] transition-colors md:border-1 md:px-8 md:py-2 md:text-[16px]"
+                        >
+                            Download
+                        </button>
                     </td>
                 </tr>
             </tbody>
