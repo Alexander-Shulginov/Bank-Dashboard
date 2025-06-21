@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineConfig({
+    base: 'https://alexander-shulginov.github.io/Bank-Dashboard/',
     plugins: [
         vue({
             template: {
