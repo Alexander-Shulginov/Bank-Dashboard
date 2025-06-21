@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
 
 <template>
     <div class="relative max-[380px]:static" ref="dropdownRef">
-        <button @click="toggleNotify" type="button" class="bg-light group cursor-pointer rounded-full p-2">
+        <button @click="toggleNotify" type="button" aria-label="Notify icon" class="bg-light group cursor-pointer rounded-full p-2">
             <SvgIcon name="app-layouts-Header-assets-icons-notify" fill="#FE5C73" class="ring-on-hover size-[20px] lg:size-[26px]" />
         </button>
 

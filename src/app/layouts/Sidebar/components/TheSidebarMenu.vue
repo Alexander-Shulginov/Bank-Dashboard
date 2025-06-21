@@ -58,7 +58,7 @@ const menuItems = [
                 <RouterLink :to="item.route" :aria-label="item.name" class="group relative flex items-center gap-6.5 outline-none">
                     <SvgIcon :name="item.icon" class="transition-colors group-hover:fill-[#1814f3] group-focus:fill-[#1814f3] group-[.router-link-active]:fill-[#1814f3]" fill="#b1b1b1" width="25" height="25" />
 
-                    <span class="text-sidebar group-hover:text-accent group-[.router-link-active]:text-accent group-focus:text-accent text-sm font-medium transition-colors lg:text-lg">{{ item.name }}</span>
+                    <span class="text-gray-500 group-hover:text-accent group-[.router-link-active]:text-accent group-focus:text-accent text-sm font-medium transition-colors lg:text-lg">{{ item.name }}</span>
 
                     <span class="bg-accent absolute top-[50%] -left-5 hidden h-[40px] w-[4px] translate-y-[-50%] rounded-tr-[10px] rounded-br-[10px] group-[.router-link-active]:inline lg:-left-10 lg:h-[60px] lg:w-[6px]"></span>
                 </RouterLink>

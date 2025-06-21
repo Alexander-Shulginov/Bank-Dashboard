@@ -25,6 +25,7 @@ onMounted(() => {
                             '#F59E0B', // Оранжевый для MCP Bank
                         ],
                         borderWidth: 0,
+                        //@ts-ignore
                         cutout: '50%', // Размер внутреннего отверстия
                     },
                 ],
@@ -45,10 +46,12 @@ onMounted(() => {
                                 family: 'Arial, sans-serif',
                             },
                             color: '#9CA3AF',
+                            //@ts-ignore
                             generateLabels: function (chart) {
                                 const data = chart.data
                                 if (data.labels?.length && data.datasets.length) {
                                     return data.labels.map((label, i) => {
+                                        //@ts-ignore
                                         const backgroundColor = data.datasets[0].backgroundColor[i]
                                         return {
                                             text: label,
